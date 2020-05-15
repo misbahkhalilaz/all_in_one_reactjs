@@ -1,4 +1,6 @@
 import React from "react";
+import ChatBot from "../Apps/ChatBot/ChatBot";
+import BugTracker from "../Apps/BugTracker/BugTracker";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -29,11 +31,11 @@ export default function App() {
 					{/* here we'll switch the components according to paths */}
 					<Route exact path="/">
 						{/* exact will be used to exactly match the given path  */}
-						<Home />
+						<BugTracker />
 					</Route>
 					<Route path="/about">
 						{/* path defined in route compnent, on requesting this path, it's child component will be rendered */}
-						<About />
+						<ChatBot />
 					</Route>
 					<Route path="/topics">
 						<Topics />

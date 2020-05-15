@@ -1,12 +1,12 @@
 import React from "react";
-import ChatCard from "./containers/ChatCard";
+import CardContainer from "./containers/CardContainer";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
-export default function App(props) {
+export default function BugTracker() {
 	return (
 		<Provider store={store}>
-			<ChatCard id="app" />
+			<CardContainer id="app" />
 		</Provider>
 	);
 }
