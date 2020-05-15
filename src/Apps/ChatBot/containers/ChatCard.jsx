@@ -12,8 +12,8 @@ export default function ChatCard(props) {
 			<Card.Body
 				style={{
 					scrollBehavior: "smooth",
-					maxHeight: "480px",
-					minHeight: "480px",
+					maxHeight: "420px",
+					minHeight: "420px",
 					overflow: "auto",
 				}}
 			>

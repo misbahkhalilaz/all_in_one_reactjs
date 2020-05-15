@@ -13,8 +13,8 @@ export default function CardContainer() {
 			<Card.Body
 				style={{
 					scrollBehavior: "smooth",
-					maxHeight: "480px",
-					minHeight: "480px",
+					maxHeight: "360px",
+					minHeight: "360px",
 					overflow: "auto",
 				}}
 			>
