@@ -10,7 +10,14 @@ export default function CardContainer() {
 			<Card.Header>
 				<InputForm />
 			</Card.Header>
-			<Card.Body>
+			<Card.Body
+				style={{
+					scrollBehavior: "smooth",
+					maxHeight: "480px",
+					minHeight: "480px",
+					overflow: "auto",
+				}}
+			>
 				<Body />
 			</Card.Body>
 			<Card.Footer>

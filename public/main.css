@@ -2,12 +2,10 @@
 	body {
 		background-color: rgb(215, 221, 236);
 	}
-	#app {
+	#card {
+		box-shadow: 10px 10px 5px grey;
 		margin: auto;
 		max-width: 480px;
 		padding: 5px;
-	}
-	#card {
-		box-shadow: 10px 10px 5px grey;
 	}
 }
