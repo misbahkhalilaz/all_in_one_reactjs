@@ -21,19 +21,19 @@ export default function App() {
 
 function NavBar() {
 	return (
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<Link class="navbar-brand" to="/">
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<Link className="navbar-brand" to="/">
 				Navbar
 			</Link>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item ">
-						<Link class="nav-link" to="/bugtracker">
+			<div className="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul className="navbar-nav mr-auto">
+					<li className="nav-item ">
+						<Link className="nav-link" to="/bugtracker">
 							BugTracker
 						</Link>
 					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="/chatbot">
+					<li className="nav-item">
+						<Link className="nav-link" to="/chatbot">
 							Boty The ChatBot
 						</Link>
 					</li>

@@ -15,18 +15,33 @@ function Views(props) {
 					<Button
 						variant="outline-info"
 						onClick={() => props.changeFilter(visibilityFilters.SHOW_ALL)}
+						active={
+							props.visibilityFilter === visibilityFilters.SHOW_ALL
+								? true
+								: false
+						}
 					>
 						All
 					</Button>
 					<Button
 						variant="outline-info"
 						onClick={() => props.changeFilter(visibilityFilters.SHOW_ACTIVE)}
+						active={
+							props.visibilityFilter === visibilityFilters.SHOW_ACTIVE
+								? true
+								: false
+						}
 					>
 						Active
 					</Button>
 					<Button
 						variant="outline-info"
 						onClick={() => props.changeFilter(visibilityFilters.SHOW_COMP)}
+						active={
+							props.visibilityFilter === visibilityFilters.SHOW_COMP
+								? true
+								: false
+						}
 					>
 						Resolved
 					</Button>
@@ -36,4 +51,7 @@ function Views(props) {
 	);
 }
 
-export default connect(null, { changeFilter })(Views);
+export default connect(
+	(state, ownProps) => ({ visibilityFilter: state.visibilityFilter }),
+	{ changeFilter }
+)(Views);
