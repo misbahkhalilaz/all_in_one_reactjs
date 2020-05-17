@@ -47,6 +47,11 @@ function CreateFields(props) {
 				readOnly={editFlag}
 				ref={fieldRef}
 				style={{ backgroundColor: props.bug.resolved ? "#c3fba5" : "#c8daf7" }}
+				onKeyPress={(e) => {
+					if (e.charCode === 13) {
+						dispatchUpdate();
+					}
+				}}
 			/>
 			<InputGroup.Append>
 				{editFlag === "readOnly" ? (
