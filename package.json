@@ -4,7 +4,7 @@
 	"description": "my all react practice stuff",
 	"main": "index.jsx",
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "serve -s build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -17,7 +17,8 @@
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "^3.4.1",
 		"redux": "^4.0.5",
-		"redux-logger": "^3.0.6"
+		"redux-logger": "^3.0.6",
+		"serve": "^11.3.0"
 	},
 	"author": "Misbah Khalil",
 	"license": "MIT",
